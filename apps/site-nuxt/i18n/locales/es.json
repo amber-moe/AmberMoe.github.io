@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "blog": "Blog",
+    "docs": "Docs",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "donors": "Donantes",
+    "social": "Social",
+    "github": "GitHub",
+    "download": "Descargas"
+  },
+  "hero": {
+    "title": "Hola, soy una",
+    "subtitle": "VTuber/Escritora Técnica",
+    "name": "Amber moe 😊",
+    "description": "Apasionada por las bases de datos, VR, XR y tecnología de vanguardia. ¡Exploremos el futuro juntos!",
+    "cta": "Sígueme en",
+    "twitter": "Twitter"
+  },
+  "social": {
+    "title": "Conéctate conmigo",
+    "description": "Únete a mí en varias plataformas",
+    "twitterDescription": "Mantente actualizado con mis últimas perspectivas técnicas, momentos detrás de escena y discusiones comunitarias."
+  },
+  "tools": {
+    "description": "Creo y contribuyo a proyectos de código abierto que ayudan a los desarrolladores a construir mejor software más rápido."
+  },
+  "testimonial": {
+    "description": "La tecnología no se trata solo de código, sino de conectar con las personas y hacer una diferencia en sus vidas."
+  },
+  "download": {
+    "title": "Descargas",
+    "description": "Obtén fondos de pantalla oficiales, kits de fan y otros recursos. ¡Gratis para uso personal!",
+    "button": "Descargar",
+    "terms": "Todos los recursos son solo para uso personal y no comercial. Por favor, da crédito a Amber Moe al compartir.",
+    "wallpapers": {
+      "title": "Fondos de Pantalla",
+      "description": "Fondos de pantalla de alta calidad para escritorio y móvil.",
+      "size": "12 MB · ZIP"
+    },
+    "fankit": {
+      "title": "Kit de Fan",
+      "description": "Logos, iconos y recursos de diseño para creaciones de fans.",
+      "size": "8 MB · ZIP"
+    },
+    "music": {
+      "title": "BGM y Música",
+      "description": "Música de fondo para streams y pistas originales.",
+      "size": "45 MB · ZIP"
+    },
+    "stickers": {
+      "title": "Stickers y Emotes",
+      "description": "Stickers y emotes divertidos para tus chats y redes sociales.",
+      "size": "5 MB · ZIP"
+    },
+    "streamAssets": {
+      "title": "Recursos de Stream",
+      "description": "Overlays, alertas y paneles para streaming.",
+      "size": "15 MB · ZIP"
+    },
+    "brandGuide": {
+      "title": "Guía de Marca",
+      "description": "Directrices oficiales de marca y reglas de uso.",
+      "size": "2 MB · PDF"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Amber Moe. Todos los derechos reservados.",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de servicio",
+    "aboutMe": "Sobre mí",
+    "contactMe": "Contáctame"
+  }
+}

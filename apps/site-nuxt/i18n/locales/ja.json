@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "blog": "ブログ",
+    "docs": "ドキュメント",
+    "about": "について",
+    "contact": "お問い合わせ",
+    "donors": "支援者",
+    "social": "ソーシャル",
+    "github": "GitHub",
+    "download": "ダウンロード"
+  },
+  "hero": {
+    "title": "こんにちは、私は",
+    "subtitle": "技術系VTuber/ライター",
+    "name": "Amber moe 😊",
+    "description": "データベース、VR、XR、最先端技術に情熱を注いでいます。一緒に未来を探求しましょう！",
+    "cta": "フォローしてください",
+    "twitter": "Twitter"
+  },
+  "social": {
+    "title": "つながりましょう",
+    "description": "様々なプラットフォームで私と繋がってください",
+    "twitterDescription": "最新の技術インサイト、舞台裏の様子、コミュニティの話題をお届けします。"
+  },
+  "tools": {
+    "description": "開発者がより良いソフトウェアをより早く構築できるように、オープンソースプロジェクトを作成・貢献しています。"
+  },
+  "testimonial": {
+    "description": "技術はコードだけではなく、人々とつながり、彼らの人生に変化をもたらすことです。"
+  },
+  "download": {
+    "title": "ダウンロード",
+    "description": "公式壁紙、ファンキット、その他のリソースを入手しましょう。個人使用は無料です！",
+    "button": "ダウンロード",
+    "terms": "すべてのリソースは個人的な非商用利用のみに使用できます。共有時にはAmber Moeをクレジットしてください。",
+    "wallpapers": {
+      "title": "壁紙",
+      "description": "デスクトップとモバイル向けの高品質壁紙。",
+      "size": "12 MB · ZIP"
+    },
+    "fankit": {
+      "title": "ファンキット",
+      "description": "ファン作品用のロゴ、アイコン、デザイン素材。",
+      "size": "8 MB · ZIP"
+    },
+    "music": {
+      "title": "BGM & 音楽",
+      "description": "配信用BGMとオリジナル楽曲。",
+      "size": "45 MB · ZIP"
+    },
+    "stickers": {
+      "title": "ステッカー & エモート",
+      "description": "チャットやSNS用の楽しいステッカーとエモート。",
+      "size": "5 MB · ZIP"
+    },
+    "streamAssets": {
+      "title": "配信素材",
+      "description": "配信用のオーバーレイ、アラート、パネル。",
+      "size": "15 MB · ZIP"
+    },
+    "brandGuide": {
+      "title": "ブランドガイドライン",
+      "description": "公式ブランドガイドラインと使用規則。",
+      "size": "2 MB · PDF"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Amber Moe. 全著作権所有。",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "aboutMe": "私について",
+    "contactMe": "お問い合わせ"
+  }
+}

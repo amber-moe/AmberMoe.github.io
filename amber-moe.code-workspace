@@ -1,0 +1,54 @@
+{
+  "folders": [
+    {
+      "name": "🏠 Root",
+      "path": ".",
+    },
+    {
+      "name": "🎨 Nuxt Site",
+      "path": "apps/site-nuxt",
+    },
+    {
+      "name": "📚 VitePress Docs",
+      "path": "apps/docs-vitepress",
+    },
+    {
+      "name": "✍️ Hexo Blog",
+      "path": "apps/blog-hexo",
+    },
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+    },
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/.nuxt": true,
+      "**/.output": true,
+      "**/dist": true,
+      "**/.vitepress/cache": true,
+      "**/.vitepress/dist": true,
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/.nuxt": true,
+      "**/.output": true,
+      "**/dist": true,
+      "**/.vitepress/cache": true,
+      "**/.vitepress/dist": true,
+    },
+  },
+  "extensions": {
+    "recommendations": [
+      "vue.volar",
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "bradlc.vscode-tailwindcss",
+      "GitHub.copilot",
+      "ms-vscode.vscode-typescript-next",
+    ],
+  },
+}

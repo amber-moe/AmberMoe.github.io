@@ -1,0 +1,145 @@
+# ===============================================================
+# NexT Theme Configuration
+# ===============================================================
+
+# ---------------------------------------------------------------
+# Scheme Settings
+# ---------------------------------------------------------------
+# Schemes: Muse | Mist | Pisces | Gemini
+scheme: Gemini
+
+# Dark Mode
+darkmode: true
+
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---------------------------------------------------------------
+favicon:
+  small: /assets/favicon.ico
+  medium: /assets/apple-touch-icon.png
+  apple_touch_icon: /assets/apple-touch-icon.png
+
+# Custom Logo (支持图片或图标)
+custom_logo: /assets/apple-touch-icon.png
+
+# ---------------------------------------------------------------
+# Menu Settings
+# ---------------------------------------------------------------
+menu:
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-folder
+  archives: /archives/ || fa fa-archive
+  官网: https://amber-moe.io/ || fa fa-globe
+
+# Enable / Disable menu icons / item badges.
+menu_settings:
+  icons: true
+  badges: true
+
+# ---------------------------------------------------------------
+# Sidebar Settings
+# ---------------------------------------------------------------
+sidebar:
+  position: left
+  display: post
+  padding: 18
+  offset: 12
+
+# Sidebar Avatar
+avatar:
+  url: /assets/apple-touch-icon.png
+  rounded: true
+  rotated: false
+
+# ---------------------------------------------------------------
+# Social Links
+# ---------------------------------------------------------------
+social:
+  GitHub: https://github.com/Amber1990Zhang || fab fa-github
+  Twitter: https://twitter.com/amber_moe66 || fab fa-twitter
+  YouTube: https://www.youtube.com/@ambermoe || fab fa-youtube
+  Bilibili: https://space.bilibili.com/557737255 || fab fa-bilibili
+
+social_icons:
+  enable: true
+  icons_only: false
+  transition: false
+
+# ---------------------------------------------------------------
+# Footer Settings
+# ---------------------------------------------------------------
+footer:
+  since: 2024
+  icon:
+    name: fa fa-heart
+    animated: true
+    color: "#ff6b9d"
+  copyright: Amber Moe
+  powered: true
+
+# ---------------------------------------------------------------
+# Posts Settings
+# ---------------------------------------------------------------
+# Read more button
+read_more_btn: true
+
+# Post meta display settings
+post_meta:
+  item_text: true
+  created_at: true
+  updated_at:
+    enable: true
+    another_day: true
+  categories: true
+
+# Post wordcount display settings
+symbols_count_time:
+  separated_meta: true
+  item_text_total: false
+
+# ---------------------------------------------------------------
+# Custom Style Settings
+# ---------------------------------------------------------------
+# Custom content after <head>
+custom_file_path:
+  style: source/_data/styles.styl
+
+# ---------------------------------------------------------------
+# Animation Settings
+# ---------------------------------------------------------------
+motion:
+  enable: true
+  async: false
+  transition:
+    post_block: fadeIn
+    post_header: fadeInDown
+    post_body: fadeInDown
+    coll_header: fadeInLeft
+    sidebar: fadeInUp
+
+# ---------------------------------------------------------------
+# Back To Top Button
+# ---------------------------------------------------------------
+back2top:
+  enable: true
+  sidebar: false
+  scrollpercent: true
+
+# ---------------------------------------------------------------
+# Reading progress bar
+# ---------------------------------------------------------------
+reading_progress:
+  enable: true
+  position: top
+  color: "#ff6b9d"
+  height: 3px
+
+# ---------------------------------------------------------------
+# Codeblock Settings
+# ---------------------------------------------------------------
+codeblock:
+  copy_button:
+    enable: true
+    style: mac

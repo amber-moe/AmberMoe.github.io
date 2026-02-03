@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "docs": "Docs",
+    "about": "About",
+    "contact": "Contact",
+    "donors": "Donors",
+    "social": "Social",
+    "github": "GitHub",
+    "download": "Download"
+  },
+  "hero": {
+    "title": "Hi, I'm a",
+    "subtitle": "Technical VTuber/Writer",
+    "name": "Amber moe 😊",
+    "description": "Passionate about Database, VR, XR, and cutting-edge technology. Let's explore the future together!",
+    "cta": "Follow me on",
+    "twitter": "Twitter"
+  },
+  "social": {
+    "title": "Connect with me",
+    "description": "Join me on various platforms",
+    "twitterDescription": "Stay updated with my latest tech insights, behind-the-scenes moments, and community discussions."
+  },
+  "tools": {
+    "description": "I create and contribute to open-source projects that help developers build better software faster."
+  },
+  "testimonial": {
+    "description": "Technology is not just about code, it's about connecting with people and making a difference in their lives."
+  },
+  "download": {
+    "title": "Downloads",
+    "description": "Get official wallpapers, fan kits, and other resources. Free for personal use!",
+    "button": "Download",
+    "terms": "All resources are for personal, non-commercial use only. Please credit Amber Moe when sharing.",
+    "wallpapers": {
+      "title": "Wallpapers",
+      "description": "High-quality desktop and mobile wallpapers featuring Amber Moe.",
+      "size": "12 MB · ZIP"
+    },
+    "fankit": {
+      "title": "Fan Kit",
+      "description": "Logos, icons, and design assets for fan creations.",
+      "size": "8 MB · ZIP"
+    },
+    "music": {
+      "title": "BGM & Music",
+      "description": "Stream background music and original tracks.",
+      "size": "45 MB · ZIP"
+    },
+    "stickers": {
+      "title": "Stickers & Emotes",
+      "description": "Fun stickers and emotes for your chats and social media.",
+      "size": "5 MB · ZIP"
+    },
+    "streamAssets": {
+      "title": "Stream Assets",
+      "description": "Overlays, alerts, and panels for streaming.",
+      "size": "15 MB · ZIP"
+    },
+    "brandGuide": {
+      "title": "Brand Guidelines",
+      "description": "Official brand guidelines and usage rules.",
+      "size": "2 MB · PDF"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Amber Moe. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "aboutMe": "About Me",
+    "contactMe": "Contact Me"
+  }
+}

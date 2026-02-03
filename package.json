@@ -1,0 +1,32 @@
+{
+  "name": "amber-moe-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Amber Moe VTuber Official Website",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:site": "cd apps/site-nuxt && npm run dev",
+    "dev:docs": "cd apps/docs-vitepress && npm run docs:dev",
+    "dev:blog": "cd apps/blog-hexo && npm run server",
+    "build": "bash build.sh",
+    "build:site": "cd apps/site-nuxt && npm run generate",
+    "build:docs": "cd apps/docs-vitepress && npm run docs:build",
+    "build:blog": "cd apps/blog-hexo && npm run build",
+    "install:all": "npm install && cd apps/site-nuxt && npm install && cd ../docs-vitepress && npm install && cd ../blog-hexo && npm install",
+    "clean": "rm -rf dist && rm -rf apps/*/node_modules && rm-rf node_modules"
+  },
+  "keywords": [
+    "vtuber",
+    "amber-moe",
+    "blog",
+    "documentation",
+    "nuxt",
+    "hexo",
+    "vitepress"
+  ],
+  "author": "Amber Moe",
+  "license": "MIT",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "首页",
+    "blog": "博客",
+    "docs": "文档",
+    "about": "关于",
+    "contact": "联系",
+    "donors": "捐赠者",
+    "social": "社交",
+    "github": "GitHub",
+    "download": "下载"
+  },
+  "hero": {
+    "title": "你好，我是",
+    "subtitle": "技术型VTuber/作家",
+    "name": "Amber moe 😊",
+    "description": "热衷于数据库、VR、XR和前沿技术。让我们一起探索未来！",
+    "cta": "在这里关注我",
+    "twitter": "推特"
+  },
+  "social": {
+    "title": "与我联系",
+    "description": "在各个平台上加入我",
+    "twitterDescription": "获取我最新的技术见解、幕后花絮和社区讨论。"
+  },
+  "tools": {
+    "description": "我创建并贡献开源项目，帮助开发者更快地构建更好的软件。"
+  },
+  "testimonial": {
+    "description": "技术不仅仅是代码，更是与人连接并改变他们生活的方式。"
+  },
+  "download": {
+    "title": "下载中心",
+    "description": "获取官方壁纸、粉丝工具包和其他资源。个人使用免费！",
+    "button": "下载",
+    "terms": "所有资源仅供个人非商业使用。分享时请注明 Amber Moe。",
+    "wallpapers": {
+      "title": "壁纸",
+      "description": "高质量的桌面和手机壁纸。",
+      "size": "12 MB · ZIP"
+    },
+    "fankit": {
+      "title": "粉丝工具包",
+      "description": "用于粉丝创作的 Logo、图标和设计素材。",
+      "size": "8 MB · ZIP"
+    },
+    "music": {
+      "title": "BGM & 音乐",
+      "description": "直播背景音乐和原创曲目。",
+      "size": "45 MB · ZIP"
+    },
+    "stickers": {
+      "title": "贴纸 & 表情",
+      "description": "用于聊天和社交媒体的有趣贴纸和表情。",
+      "size": "5 MB · ZIP"
+    },
+    "streamAssets": {
+      "title": "直播素材",
+      "description": "覆盖层、提醒和面板等直播素材。",
+      "size": "15 MB · ZIP"
+    },
+    "brandGuide": {
+      "title": "品牌指南",
+      "description": "官方品牌指南和使用规则。",
+      "size": "2 MB · PDF"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Amber Moe. 版权所有。",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "aboutMe": "关于我",
+    "contactMe": "联系我"
+  }
+}

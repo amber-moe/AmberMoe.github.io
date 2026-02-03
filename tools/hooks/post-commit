@@ -1,0 +1,40 @@
+#!/bin/bash
+# post-commit hook - Generate blog post from commit
+# 
+# Installation:
+# 1. Copy this file to .git/hooks/post-commit
+# 2. Make it executable: chmod +x .git/hooks/post-commit
+# 
+# Or use the install script: ./tools/install-hooks.sh
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+TOOLS_DIR="$REPO_ROOT/tools"
+OUTPUT_DIR="$REPO_ROOT/apps/blog-hexo/source/_posts"
+TEMPLATE_PATH="$TOOLS_DIR/templates/commit-post.md"
+
+# Check if Python is available
+if command -v python3 &> /dev/null; then
+    PYTHON_CMD="python3"
+elif command -v python &> /dev/null; then
+    PYTHON_CMD="python"
+else
+    echo "❌ Python is not installed. Skipping blog post generation."
+    exit 0
+fi
+
+# Check if the script exists
+if [ ! -f "$TOOLS_DIR/git-commit-to-blog.py" ]; then
+    echo "⚠️ git-commit-to-blog.py not found. Skipping blog post generation."
+    exit 0
+fi
+
+# Generate blog post
+echo "📝 Generating blog post from commit..."
+$PYTHON_CMD "$TOOLS_DIR/git-commit-to-blog.py" \
+    --repo-path "$REPO_ROOT" \
+    --output-dir "$OUTPUT_DIR" \
+    --template "$TEMPLATE_PATH" \
+    --commit HEAD
+
+echo "✅ Blog post generated!"

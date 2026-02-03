@@ -1,0 +1,47 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install root dependencies
+        run: npm install
+
+      - name: Install Nuxt dependencies
+        run: cd apps/site-nuxt && npm install
+
+      - name: Install VitePress dependencies
+        run: cd apps/docs-vitepress && npm install
+
+      - name: Install Hexo dependencies
+        run: cd apps/blog-hexo && npm install
+
+      - name: Build all projects
+        run: bash build.sh
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: amber-moe-io-website
+          directory: dist
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

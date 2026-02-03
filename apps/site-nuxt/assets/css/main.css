@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap");
+@import "tailwindcss";
+
+/* Custom theme variables for VTuber style - Unified Pink Theme */
+@theme {
+  /* Primary pink colors - unified theme */
+  --color-vtuber-pink: #ffb7c5;
+  --color-vtuber-pink-dark: #ff9ead;
+  --color-vtuber-pink-darker: #ff8599;
+  --color-vtuber-pink-light: #ffd0da;
+
+  /* Secondary accent - subtle pink variations */
+  --color-vtuber-accent: #ff9ead;
+  --color-vtuber-accent-dark: #e88a9a;
+
+  /* Keep blue for rare contrast elements only */
+  --color-vtuber-blue: #a0d8ef;
+  --color-vtuber-blue-dark: #8bc8e1;
+
+  --font-family-sans:
+    "Nunito", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ==========================================
+   GLOBAL BASE STYLES
+   ========================================== */
+
+/* Base body styles */
+body {
+  font-family: var(--font-family-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Root element - ensure dark mode works */
+html {
+  color-scheme: light dark;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+/* ==========================================
+   DARK MODE COLOR OVERRIDES
+   ========================================== */
+
+/* Light mode base colors (default) */
+:root {
+  --bg-primary: theme(colors.white);
+  --bg-secondary: theme(colors.gray.50);
+  --bg-tertiary: theme(colors.gray.100);
+  --text-primary: theme(colors.gray.900);
+  --text-secondary: theme(colors.gray.600);
+  --text-tertiary: theme(colors.gray.500);
+  --border-color: theme(colors.gray.200);
+}
+
+/* Dark mode base colors */
+.dark {
+  --bg-primary: theme(colors.gray.900);
+  --bg-secondary: theme(colors.gray.800);
+  --bg-tertiary: theme(colors.gray.700);
+  --text-primary: theme(colors.white);
+  --text-secondary: theme(colors.gray.300);
+  --text-tertiary: theme(colors.gray.400);
+  --border-color: theme(colors.gray.700);
+}
+
+/* ==========================================
+   CUSTOM UTILITY CLASSES
+   ========================================== */
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* ==========================================
+   PAGE TRANSITIONS
+   ========================================== */
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.3s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+
+/* ==========================================
+   CUSTOM ANIMATIONS
+   ========================================== */
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* ==========================================
+   GLASS EFFECT
+   ========================================== */
+
+.glass {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.dark .glass {
+  background-color: rgba(17, 24, 39, 0.7);
+  border: 1px solid rgba(55, 65, 81, 0.4);
+}
+
+/* ==========================================
+   VTUBER CARD STYLE
+   ========================================== */
+
+.vtuber-card {
+  background-color: white;
+  border-radius: 1.5rem;
+  border: 1px solid #f3f4f6;
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transition: all 0.3s ease;
+}
+
+.dark .vtuber-card {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+}
+
+.vtuber-card:hover {
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* ==========================================
+   PROSE DARK MODE (for markdown content)
+   ========================================== */
+
+.dark .prose {
+  --tw-prose-body: theme(colors.gray.300);
+  --tw-prose-headings: theme(colors.white);
+  --tw-prose-links: theme(colors.pink.400);
+  --tw-prose-bold: theme(colors.white);
+  --tw-prose-counters: theme(colors.gray.400);
+  --tw-prose-bullets: theme(colors.gray.400);
+  --tw-prose-hr: theme(colors.gray.700);
+  --tw-prose-quotes: theme(colors.gray.100);
+  --tw-prose-quote-borders: theme(colors.gray.700);
+  --tw-prose-captions: theme(colors.gray.400);
+  --tw-prose-code: theme(colors.white);
+  --tw-prose-pre-code: theme(colors.gray.300);
+  --tw-prose-pre-bg: theme(colors.gray.800);
+  --tw-prose-th-borders: theme(colors.gray.600);
+  --tw-prose-td-borders: theme(colors.gray.700);
+}
