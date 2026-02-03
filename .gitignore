@@ -11,7 +11,6 @@ dist/
 .nuxt/
 .vitepress/dist
 .vitepress/cache
-public/
 
 # Hexo
 apps/blog-hexo/public/
